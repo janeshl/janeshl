@@ -9,7 +9,7 @@ class new(models.Model):
      _description = 'new.new'
       
      name = fields.Char('Name')
-     date = fields.Date(string='Date')
+     date = fields.Date(string='Date', readonly="True")
      state = fields.Char('State')
 
      def cnfrm(self):
