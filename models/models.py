@@ -10,7 +10,7 @@ class new(models.Model):
       
      name = fields.Char('Name')
      date = fields.Date(string='Date', readonly="True")
-     state = fields.Char('State')
+     state = fields.Char('State',default="DRAFT",readonly="True")
 
      def cnfrm(self):
          self.date=date.today()
